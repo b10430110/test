@@ -1,0 +1,61 @@
+<html>
+
+<body>
+
+    <h1>JavaScript Functions</h1>
+
+    <p>Calculation:</p>
+
+    <input type="Number" id="num1" value="">
+    <input type="Number" id="num2" value="">
+    <script>
+        function myFunction() {
+            var x, y;
+
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            var z = parseInt(x) + parseInt(y);
+
+            document.getElementById("ans").innerHTML = z;
+        }
+
+        function myFunction2() {
+            var x, y;
+
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            var z = parseInt(x) - parseInt(y);
+
+            document.getElementById("ans2").innerHTML = z;
+        }
+
+        function myFunction3() {
+            var x, y;
+
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            var z = parseInt(x) * parseInt(y);
+
+            document.getElementById("ans3").innerHTML = z;
+        }
+
+        function myFunction4() {
+            var x, y;
+
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            var z = parseInt(x) / parseInt(y);
+
+            document.getElementById("ans4").innerHTML = z;
+        }
+    </script>
+    <output id="ans"></output>
+    <button onclick="myFunction()">+<button>
+    <output id = "ans2"></output>
+<button onclick = "myFunction2()">-<button>
+    <output id = "ans3"></output>
+<button onclick = "myFunction3()">*<button>
+    <output id = "ans4"></output>
+<button onclick = "myFunction4()">/<button>
+</body>
+</html>
