@@ -5,7 +5,7 @@
 
     <h1>Fraction</h1>
 
-    <p>Please input a number between 1 and 100:</p>
+    <p>Please input a number between 0 and 100:</p>
 
     <input id="numb">
 
@@ -21,7 +21,7 @@
             x = document.getElementById("numb").value;
 
             // If x is Not a Number or less than one or greater than 10
-            if (isNaN(x) || x < 1 || x > 100) {
+            if (isNaN(x) || x < 0 || x > 100) {
                 text = "Input not valid";
             } else if (x < 60) {
                 text = "failed";
